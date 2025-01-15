@@ -1,14 +1,14 @@
 mod qr_code;
 mod render;
-mod wifi_info;
+mod wifi;
 
 use qr_code::generate_qr_code;
 use render::{QrRenderer, TextQrRenderer};
-use wifi_info::WifiInfoBuilder;
+use wifi::builder::WifiInfoBuilder;
 
 fn main() {
     let ssid = "NAME-OF.RED";
-    let encryption = "SECURYTT"; //Example WPA2
+    let encryption = "SECURITY"; //Example WPA2
     let password = "NETWORK-PASSWORD";
 
     let wifi_info = match WifiInfoBuilder::new()
