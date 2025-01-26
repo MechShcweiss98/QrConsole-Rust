@@ -3,3 +3,4 @@ pub mod get_info;
 pub mod generate;
 pub mod loops;
 pub mod generate_image;
+pub mod ascii;
